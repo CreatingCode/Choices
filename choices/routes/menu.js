@@ -9,7 +9,7 @@ router.get('/', function(req, res, next) {
     res.render('menu',
         {
             title: 'Menu',
-            menuType: 'fixed'
+            menuType: 'sticky'
         });
 });
 

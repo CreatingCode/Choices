@@ -3,10 +3,9 @@ extends layout
 - console.log('yo')
 
 block content
-    h1= title
-    h1= menuType
-
-    if(menuType === 'fixed')
-        include components/menu-fixed
-    else if (menuType === 'float')
-        include components/menu-flaot
+    if menuType === 'fixed'
+        include components/navbar/navbar-sticky
+    else if menuType === 'float'
+        include components/navbar/navbar-float
+    else
+        include components/navbar/navbar-fixed
